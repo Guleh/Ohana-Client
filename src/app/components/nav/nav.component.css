@@ -1,0 +1,98 @@
+.nav_content{
+    font-family: "Amatic SC", sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(64, 224, 208, 0.781);
+    transition: 0.5s;
+}
+
+.nav_button{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color:coral;
+    border-radius: 400px;
+    border: 0px rgb(248, 164, 133) solid;
+    box-shadow: 0px 0px 0px 8px rgba(248, 164, 133, 0.4);
+    right:-50px;
+    left:auto;
+    top:-50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+ul{
+    list-style-type: none;
+    transition: 0.5s;
+    text-align: center;
+}
+
+li{
+    transition: 0.5s;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    display: none;
+}
+
+#placeholder{
+    font-size: 2rem;
+    color: white;
+}
+
+
+.nav_button:hover{
+    background-color: rgb(255, 88, 28);
+    width: 350px;
+    height:350px;
+    font-size: 3rem;
+    transition: 0.5s;
+    border-width: 20px;
+    box-shadow: 0px 0px 0px 20px rgba(248, 164, 133, 0.4);
+    transition: 0.5s;
+}
+
+.nav_button:hover #placeholder{
+    display: none;
+    transition: 0.5s;
+}
+
+.nav_button:hover a{
+    display: block;
+    transition: 0.5s;
+}
+
+a:hover{
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+@media (pointer: none), (pointer: coarse){
+    .nav_button.show{
+        background-color: rgb(255, 88, 28);
+        width: 250px;
+        height:250px;
+        font-size: 2.5rem;
+        transition: 0.5s;
+        border-width: 20px;
+        box-shadow: 0px 0px 0px 20px rgba(248, 164, 133, 0.4);
+        transition: 0.5s;
+    }
+
+    .nav_button .show a{
+        display: block;
+        transition: 0.5s;
+    }
+
+    .nav_button.show #placeholder{
+        display: none;
+        transition: 0.5s;
+    }
+
+}

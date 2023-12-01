@@ -1,0 +1,7 @@
+.legend_cell_grid{
+    background-color:aqua;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 1fr
+}
